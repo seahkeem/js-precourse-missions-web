@@ -1,0 +1,61 @@
+{
+  "name": "js-precourse-missions-web",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vite",
+    "start": "npm run dev",
+    "build": "vite build",
+    "test": "jest --detectOpenHandles --verbose",
+    "lint": "eslint --ext .js,.cjs src/",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [
+    "javascript",
+    "oop",
+    "tdd",
+    "vite",
+    "eslint",
+    "prettier"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.38.0",
+    "@mdx-js/react": "^3.1.1",
+    "@storybook/addon-docs": "^10.0.7",
+    "@storybook/html-vite": "^10.0.7",
+    "@vitejs/plugin-react": "^5.1.0",
+    "babel-jest": "^30.1.2",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-storybook": "^10.0.7",
+    "globals": "^16.4.0",
+    "jest": "^30.1.2",
+    "prettier": "^3.6.2",
+    "storybook": "^10.0.7",
+    "vite": "^5.0.12"
+  },
+  "dependencies": {
+    "@woowacourse/mission-utils": "^2.2.0"
+  },
+  "jest": {
+    "transform": {
+      "\\.js$": "babel-jest"
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
