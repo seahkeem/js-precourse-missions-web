@@ -1,0 +1,52 @@
+.app-footer {
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Pretendard', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: var(--color-gray-400);
+  text-align: center;
+}
+
+.footer-top-links {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.footer-top-links .separator {
+  color: var(--color-gray-200);
+  margin: 0 6px;
+}
+
+.footer-top-links .github-link,
+.footer-top-links .email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-top-links a svg {
+  fill: currentColor; 
+}
+
+.footer-copyright {
+  margin: 6px 0px;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--color-gray-300);
+}
+
+.app-footer a {
+  color: var(--color-gray-400);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.app-footer a:hover {
+  color: var(--color-gray-500);
+}

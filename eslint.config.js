@@ -48,13 +48,15 @@ export default [
       'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 0 }],
       'eol-last': ['error', 'always'],
       'max-len': ['error', { code: 100, ignoreUrls: true, ignoreComments: false, ignoreRegExpLiterals: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
-      'import/extensions': ['error', 'ignorePackages'],
+      'import/extensions': ['off'],
       'class-methods-use-this': 'off',
       'no-console': 'off',
       'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
       'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true },],
       'import/no-unresolved': ['error', { ignore: ['^@/'] }],
       'no-param-reassign': ['error', { props: true, ignorePropertyModificationsFor: ['acc', 'e', 'req', 'res', 'ctx', 'state', 'el', 'node', 'elem', 'element', 'event', 'rootElement'] }],
+      'no-restricted-exports': ['off'],
+      'import/prefer-default-export': ['off'],
     },
   },
   {
@@ -62,6 +64,12 @@ export default [
     rules: {
       'max-depth': ['error', 2],
       'max-lines-per-function': ['error', { max: 15 }],
+    },
+  },
+  {
+    files: ['src/widgets/**/*.js', 'src/pages/**/*.js'],
+    rules: {
+      'max-lines-per-function': 'off',
     },
   },
   {

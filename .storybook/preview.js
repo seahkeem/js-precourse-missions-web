@@ -1,4 +1,4 @@
-import '../src/shared/styles/global.css';
+import '@/shared/styles/index.css';
 
 const preview = {
   parameters: {

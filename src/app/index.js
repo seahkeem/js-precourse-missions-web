@@ -1,4 +1,4 @@
-import '@/shared/styles/global.css';
+import '@/shared/styles/index.css';
 import App from './App.js';
 
 document.addEventListener('DOMContentLoaded', () => {
