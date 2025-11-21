@@ -102,5 +102,11 @@ export default [
       'max-lines-per-function': 'off',
     },
   },
+  {
+    files: ['**/__test__/**/*.test.js'],
+    rules: {
+      'max-lines-per-function': 'off',
+    },
+  },
   ...compat.extends('plugin:storybook/recommended'),
 ];
