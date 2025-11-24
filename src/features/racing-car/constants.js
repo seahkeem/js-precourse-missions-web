@@ -12,6 +12,7 @@ const ERROR_MESSAGES = Object.freeze({
   NAME_LENGTH: '자동차 이름은 5자 이하만 가능합니다.',
   NAME_INVALID: '자동차 이름 목록이 유효하지 않습니다.',
   COUNT_INVALID: '시도할 횟수는 양의 정수만 가능합니다.',
+  COUNT_MAX: '시도할 횟수는 최대 22회까지 가능합니다.',
 });
 
 const CAR_CONSTANTS = Object.freeze({
@@ -19,6 +20,7 @@ const CAR_CONSTANTS = Object.freeze({
   MOVING_CRITERIA: 4,
   MIN_RANDOM_VALUE: 0,
   MAX_RANDOM_VALUE: 9,
+  MAX_TRY_COUNT: 22,
 });
 
 export { INPUT_MESSAGES, OUTPUT_MESSAGES, ERROR_MESSAGES, CAR_CONSTANTS };

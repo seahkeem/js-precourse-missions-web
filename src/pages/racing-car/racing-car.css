@@ -1,0 +1,95 @@
+.racing-car-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.page-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.app-container {
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 2px solid var(--color-black);
+}
+
+.rc-section {
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.rc-section:last-child {
+  margin-bottom: 0;
+}
+
+.rc-subtitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.rc-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 2px solid var(--color-black);
+  border-radius: 6px;
+}
+
+.rc-button {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid var(--color-black);
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: var(--color-accent-orange);
+  color: var(--color-black);
+  transition: all 0.1s ease-in-out;
+}
+
+.rc-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--color-black);
+}
+
+.rc-display-section {
+  padding: 15px 0;
+}
+
+.rc-race-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.rc-car-progress {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.rc-car-name-box {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 4px;
+  background-color: var(--color-gray-100);
+  font-weight: 500;
+  min-width: 60px;
+  text-align: center;
+}

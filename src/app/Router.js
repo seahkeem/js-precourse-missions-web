@@ -1,5 +1,6 @@
 import CalculatorPage from "@/pages/calculator";
 import LottoPage from "@/pages/lotto";
+import RacingCarPage from "@/pages/racing-car/RacingCarPage.js";
 
 const routes = {
   '/': {
@@ -10,8 +11,8 @@ const routes = {
     name: 'Calculator',
     page: null
   },
-  '/racingcar': {
-    name: 'Racingcar',
+  '/racing-car': {
+    name: 'Racing Car',
     page: null
   },
   '/lotto': {
@@ -35,6 +36,7 @@ class Router {
   registerPages() {
     routes['/calculator'].page = new CalculatorPage(this.rootElement);
     routes['/lotto'].page = new LottoPage(this.rootElement);
+    routes['/racing-car'].page = new RacingCarPage(this.rootElement);
   }
 
   handleInitialLoad() {

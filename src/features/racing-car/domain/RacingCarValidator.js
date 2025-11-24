@@ -16,6 +16,9 @@ const RacingCarValidator = {
     if (!Number.isInteger(count) || count <= 0) {
       throw new Error(`${COMMON_MESSAGES.ERROR_PREFIX}${ERROR_MESSAGES.COUNT_INVALID}`);
     }
+    if (count > CAR_CONSTANTS.MAX_TRY_COUNT) {
+      throw new Error(`${COMMON_MESSAGES.ERROR_PREFIX}${ERROR_MESSAGES.COUNT_MAX}`);
+    }
   },
 };
 

@@ -1,6 +1,7 @@
 import '@/shared/styles/index.css';
 import '@/pages/calculator/calculator.css';
 import '@/pages/lotto/lotto.css';
+import '@/pages/racing-car/racing-car.css';
 
 const preview = {
   parameters: {
