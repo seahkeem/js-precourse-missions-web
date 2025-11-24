@@ -13,3 +13,7 @@ body {
   background: var(--color-primary);
   color: var(--color-gray-500);
 }
+
+.hidden {
+  display: none !important;
+}

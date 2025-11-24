@@ -4,13 +4,10 @@ export default {
   title: "Lotto/PrizeTable",
   tags: ["autodocs"],
 
-  render: () => {
+  render: (args) => {
     const container = document.createElement("div");
-
     const tableInstance = new PrizeTable();
-
-    container.innerHTML = tableInstance.render();
-
+    container.innerHTML = tableInstance.render(args);
     container.style.maxWidth = '600px';
     container.style.padding = '20px';
 
@@ -20,9 +17,24 @@ export default {
   parameters: {
     layout: "centered",
   },
-
-  args: {},
-  argTypes: {},
 };
 
-export const DefaultPrizeTable = {};
+export const Default = {
+  args: {
+    result: null,
+    profitRate: null,
+  },
+};
+
+export const WithResults = {
+  args: {
+    result: {
+      1: 0,
+      2: 0,
+      3: 0,
+      4: 1,
+      5: 2,
+    },
+    profitRate: 550,
+  },
+};

@@ -15,6 +15,7 @@ class LottoResult {
     this.#purchaseAmount = purchaseAmount;
     this.#results = this.#initializeResults();
     this.#totalPrize = 0;
+
     this.#calculateResults();
   }
 

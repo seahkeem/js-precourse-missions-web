@@ -1,51 +1,46 @@
 import LottoContainer from "./LottoContainer";
 
+class MockLotto {
+  constructor(numbers) {
+    this.numbers = numbers;
+  }
+
+  getNumbers() {
+    return this.numbers;
+  }
+}
+
 export default {
   title: "Lotto/LottoContainer",
   tags: ["autodocs"],
 
-  render: () => {
+  render: (args) => {
     const container = document.createElement("div");
-
     const containerInstance = new LottoContainer();
+    container.innerHTML = containerInstance.render(args);
 
-    container.innerHTML = containerInstance.render();
-
-    container.style.width = '100%';
-    container.style.display = 'flex';
-    container.style.justifyContent = 'center';
-    container.style.minHeight = '100vh';
-
+    container.style.width = '600px';
+    container.style.padding = '20px';
     return container;
   },
 
   parameters: {
-    layout: "padded",
+    layout: "centered",
   },
-
-  args: {},
-  argTypes: {},
 };
 
-export const Default = {};
+export const Default = {
+  args: {
+    lottos: [],
+  }
+};
 
-export const WithWinningInputVisible = {
-  render: () => {
-    const container = document.createElement("div");
-    const containerInstance = new LottoContainer();
-    container.innerHTML = containerInstance.render();
-
-    const winningSection = container.querySelector('.winning-input-section');
-    if (winningSection) {
-      winningSection.classList.remove('hidden');
-    }
-
-    container.style.width = '100%';
-    container.style.display = 'flex';
-    container.style.justifyContent = 'center';
-    container.style.minHeight = '100vh';
-
-    return container;
-  },
-  name: 'Select number',
+export const WithLottos = {
+  args: {
+    lottos: [
+      new MockLotto([1, 2, 3, 4, 5, 6]),
+      new MockLotto([7, 8, 9, 10, 11, 12]),
+      new MockLotto([13, 14, 15, 16, 17, 18]),
+    ]
+  }
 };

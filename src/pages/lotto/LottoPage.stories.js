@@ -6,25 +6,26 @@ export default {
 
   render: () => {
     const rootContainer = document.createElement("div");
-
+    rootContainer.id = 'lotto-page-root-story'; // Add id for play function
     const pageInstance = new LottoPage(rootContainer);
-
     pageInstance.render();
-
-    rootContainer.style.padding = "20px";
-    rootContainer.style.minHeight = "100vh";
-    rootContainer.style.display = 'flex';
-    rootContainer.style.justifyContent = 'center';
-
     return rootContainer;
   },
 
-  parameters: {
-    layout: "padded",
+  play: async ({ canvasElement }) => {
+    const rootContainer = canvasElement.querySelector('#lotto-page-root-story');
+    if (rootContainer) {
+      const pageInstance = new LottoPage(rootContainer);
+      pageInstance.render();
+      pageInstance.bindEvents();
+    }
   },
 
-  args: {},
-  argTypes: {},
+  parameters: {
+    layout: "fullscreen",
+  },
 };
 
-export const Default = {};
+export const Default = {
+  name: '전체 로또 앱',
+};

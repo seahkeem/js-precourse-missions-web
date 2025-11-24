@@ -47,7 +47,7 @@ export default [
       'no-trailing-spaces': 'error',
       'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 0 }],
       'eol-last': ['error', 'always'],
-      'max-len': ['error', { code: 100, ignoreUrls: true, ignoreComments: false, ignoreRegExpLiterals: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
+      'max-len': ['error', { code: 120, ignoreUrls: true, ignoreComments: false, ignoreRegExpLiterals: true, ignoreStrings: true, ignoreTemplateLiterals: true }],
       'import/extensions': ['off'],
       'class-methods-use-this': 'off',
       'no-console': 'off',
@@ -67,7 +67,7 @@ export default [
     },
   },
   {
-    files: ['src/widgets/**/*.js', 'src/pages/**/*.js'],
+    files: ['src/features/**/*.js', 'src/widgets/**/*.js', 'src/pages/**/*.js'],
     rules: {
       'max-lines-per-function': 'off',
     },
