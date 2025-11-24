@@ -1,0 +1,132 @@
+.lotto-page {
+  max-width: 600px; 
+  width: 100%;
+  margin: 0 auto;
+}
+
+.lotto-app-container {
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 2px solid var(--color-black);
+}
+
+.lotto-section {
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.lotto-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.lotto-subtitle {
+  font-size: 20px; 
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--color-black);
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-group input[type="number"],
+.input-group input[type="text"] {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 2px solid var(--color-black);
+  border-radius: 6px;
+  flex-grow: 1;
+}
+
+.input-group button {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid var(--color-black);
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: var(--color-accent-orange);
+  color: var(--color-white);
+  transition: all 0.1s ease-in-out;
+}
+
+.input-group button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--color-black);
+}
+
+.lotto-prize-area {
+    margin-bottom: 20px;
+}
+
+.prize-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 14px;
+  border: 2px solid var(--color-black);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.prize-table th,
+.prize-table td {
+  padding: 10px;
+  border: 1px solid var(--color-gray-300);
+}
+
+.prize-table thead th {
+  background-color: var(--color-gray-100);
+  font-weight: 600;
+}
+
+.prize-table tbody tr:nth-child(even) {
+  background-color: var(--color-gray-50);
+}
+
+.lotto-balls-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.lotto-ball-grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 8px;
+}
+
+.lotto-ball {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: var(--color-black); 
+  border-radius: 50%;
+  border: 2px solid var(--color-black); 
+  white-space: nowrap;
+}
+
+.lotto-ball.large {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.lotto-ball.small {
+  width: 28px;
+  height: 28px;
+  font-size: 13px;
+}

@@ -1,5 +1,6 @@
 import '@/shared/styles/index.css';
 import '@/pages/calculator/calculator.css';
+import '@/pages/lotto/lotto.css';
 
 const preview = {
   parameters: {

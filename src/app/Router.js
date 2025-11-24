@@ -1,4 +1,5 @@
 import CalculatorPage from "@/pages/calculator";
+import LottoPage from "@/pages/lotto";
 
 const routes = {
   '/': {
@@ -33,6 +34,7 @@ class Router {
 
   registerPages() {
     routes['/calculator'].page = new CalculatorPage(this.rootElement);
+    routes['/lotto'].page = new LottoPage(this.rootElement);
   }
 
   handleInitialLoad() {

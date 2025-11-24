@@ -30,3 +30,19 @@ export const OUTPUT_MESSAGES = Object.freeze({
   MATCH_SIX: '6개 일치 (2,000,000,000원) - ',
   RETURN_RATE: (rate) => `총 수익률은 ${rate}%입니다.`,
 });
+
+export const LOTTO_BALL_COLORS = {
+  10: '#fbc400',
+  20: '#69c8f0',
+  30: '#ff7272',
+  40: '#aaaaaa',
+  45: '#b100e8',
+};
+
+export const getBallColor = (number) => {
+  if (number <= 10) return LOTTO_BALL_COLORS[10];
+  if (number <= 20) return LOTTO_BALL_COLORS[20];
+  if (number <= 30) return LOTTO_BALL_COLORS[30];
+  if (number <= 40) return LOTTO_BALL_COLORS[40];
+  return LOTTO_BALL_COLORS[45];
+};
