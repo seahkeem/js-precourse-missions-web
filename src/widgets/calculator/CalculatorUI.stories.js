@@ -11,10 +11,11 @@ export default {
 
     const calculator = new CalculatorUI({
       mode: "basic",
-      customDelimiter: ""
+      customDelimiter: "",
     });
 
     container.innerHTML = calculator.render();
+    calculator.bindEvents(container, (key) => console.log('Storybook Key Input:', key));
 
     return container;
   },

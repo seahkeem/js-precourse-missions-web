@@ -13,6 +13,7 @@ export default {
     const pageInstance = new CalculatorPage(rootContainer);
 
     pageInstance.render();
+    pageInstance.bindEvents();
 
     return rootContainer;
   },

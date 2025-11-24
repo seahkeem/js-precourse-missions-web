@@ -1,7 +1,6 @@
 import {
   KEYPAD_LAYOUT,
   BASIC_LAST_ROW,
-  // CUSTOM_LAST_ROW_STUB,
   CALCULATION_ACTION_KEY,
   ENTER_KEY_TEXT
 } from '@/features/calculator'
@@ -33,6 +32,15 @@ const Keypad = {
         ${renderKeypadButtons(buttons, CALCULATION_ACTION_KEY, ENTER_KEY_TEXT)}
       </div>
     `;
+  },
+
+  bindEvents(root, onInput) {
+    root.querySelectorAll(".keypad-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const value = btn.dataset.key;
+        onInput?.(value);
+      });
+    });
   },
 };
 

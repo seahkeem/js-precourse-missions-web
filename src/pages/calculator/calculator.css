@@ -57,6 +57,24 @@
   box-shadow: 1px 1px 0 var(--color-black);
 }
 
+.delimiter-custom-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.delimiter-error-message {
+  color: red;
+  font-size: 14px;
+  margin-left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.delimiter-error-message.active-error {
+  opacity: 1;
+}
+
 .keypad {
   display: flex;
   flex-direction: column;

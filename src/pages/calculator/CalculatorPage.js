@@ -1,14 +1,23 @@
 import './calculator.css';
 import { DelimiterSelector, CalculatorUI } from '@/widgets/calculator';
+import { CalculatorController } from '@/features/calculator';
 
 class CalculatorPage {
   constructor(rootElement) {
     this.root = rootElement;
-    this.delimiterSelector = new DelimiterSelector({});
-    this.calculatorUI = new CalculatorUI({});
+
+    this.calculatorUI = new CalculatorUI();
+    this.delimiterSelector = new DelimiterSelector();
+
+    this.controller = new CalculatorController({
+      rootElement: this.root,
+      calculatorUI: this.calculatorUI,
+      delimiterSelector: this.delimiterSelector,
+    });
   }
 
   bindEvents() {
+    this.controller.init();
   }
 
   render() {

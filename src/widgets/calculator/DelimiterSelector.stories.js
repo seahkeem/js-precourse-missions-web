@@ -7,11 +7,13 @@ export default {
   render: () => {
     const container = document.createElement("div");
 
-    const selector = new DelimiterSelector((data) => {
-      console.log("Delimiter changed:", data);
-    });
+    const selector = new DelimiterSelector();
 
     container.innerHTML = selector.render();
+
+    selector.bindEvents(container, (data) => {
+      console.log("Delimiter changed:", data);
+    });
 
     return container;
   },
