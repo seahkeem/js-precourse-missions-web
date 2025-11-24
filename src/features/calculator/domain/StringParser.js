@@ -3,7 +3,7 @@ import {
   DEFAULT_DELIMITERS,
   CUSTOM_DELIMITER_PREFIX,
   CUSTOM_DELIMITER_SUFFIX
-} from '../../constants';
+} from '../constants';
 
 class StringParser {
 
