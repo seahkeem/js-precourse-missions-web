@@ -106,6 +106,7 @@ export default [
     files: ['**/__test__/**/*.test.js'],
     rules: {
       'max-lines-per-function': 'off',
+      'no-new': 'off',
     },
   },
 
