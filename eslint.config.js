@@ -108,5 +108,13 @@ export default [
       'max-lines-per-function': 'off',
     },
   },
+
+  {
+    files: ['src/shared/utils/template.utils.js'],
+    rules: {
+      'max-lines-per-function': 'off',
+      'indent': 'off',
+    },
+  },
   ...compat.extends('plugin:storybook/recommended'),
 ];

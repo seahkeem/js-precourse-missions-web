@@ -7,5 +7,9 @@
   --color-gray-300: #999;
   --color-gray-400: #666;
   --color-gray-500: #333;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-accent-orange: #FF4D00;
+  --color-accent-green: #0cff36;
   --overlay-bg: rgba(0, 0, 0, 0.2);
 }

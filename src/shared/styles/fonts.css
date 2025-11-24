@@ -65,7 +65,7 @@
   font-family: 'Konstant Grotesk Book';
   font-style: normal;
   font-weight: normal;
-  src: local('Konstant Grotesk Book'), url(../../assets/font/neuekonstantgrotesk-book.woff) format('woff');
+  src: local('Konstant Grotesk Book'), url(../../assets/fonts/neuekonstantgrotesk-book.woff) format('woff');
 }
 
 @font-face {
@@ -73,4 +73,12 @@
   font-style: normal;
   font-weight: 400;
   src: url(../../assets/fonts/OutfitVariableFont_wght1.ttf) format('truetype-variations');
+}
+
+@font-face {
+  font-family: 'Digital 7';
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../assets/fonts/digital-7.ttf) format('truetype');
+  font-display: swap;
 }

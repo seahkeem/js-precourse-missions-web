@@ -1,2 +1,2 @@
 export { createDelimiterRegex } from "./regex.utils";
-export { renderNavLinks } from "./template.utils";
+export { renderNavLinks, renderKeypadButtons } from "./template.utils";

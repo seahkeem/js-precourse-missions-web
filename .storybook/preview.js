@@ -1,4 +1,5 @@
 import '@/shared/styles/index.css';
+import '@/pages/calculator/calculator.css';
 
 const preview = {
   parameters: {

@@ -1,0 +1,112 @@
+.calculator-page {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.delimiter-area {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  border: 2px solid var(--color-black);
+  background: var(--color-white);
+}
+
+.delimiter-options {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.delimiter-options label {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.delimiter-custom-box {
+  display: flex;
+  gap: 10px;
+}
+
+.delimiter-custom-box.hidden {
+  display: none;
+}
+
+.delimiter-input {
+  padding: 6px 10px;
+  width: 100px;
+  font-size: 14px;
+  border: 2px solid var(--color-black);
+  border-radius: 6px;
+}
+
+.delimiter-confirm-btn {
+  padding: 6px 12px;
+  border: 2px solid var(--color-black);
+  border-radius: 6px;
+  background: var(--color-gray-100);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delimiter-confirm-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--color-black);
+}
+
+.keypad {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.keypad-row {
+  display: flex;
+  gap: 10px;
+}
+
+.keypad-btn {
+  flex: 1;
+  padding: 16px 0;
+  font-size: 24px;
+  font-weight: 100;
+  border: 2px solid var(--color-black);
+  border-radius: 12px;
+  background-color: var(--color-white);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.keypad-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--color-black);
+}
+
+.keypad-btn[data-key="C"],
+.keypad-btn[data-key="CE"],
+.keypad-btn[data-key="↲"] {
+  background-color: var(--color-accent-orange);
+  color: var(--color-white);
+}
+
+.calculator-output {
+  padding: 12px 16px;
+  font-size: 48px;
+  font-family: 'Digital 7';
+  background-color: var(--color-black); 
+  color: var(--color-accent-green);
+  text-align: right; 
+  border: 2px solid var(--color-black);
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.display-value {
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: clip;
+  display: block;
+}
